@@ -1,0 +1,138 @@
+$light-color: #ffd700;
+$dark-color: #181818;
+$secondary-dark-color: #4d4d4e;
+
+.nav-bar{
+    background-color: $dark-color;
+    height: 100vh;
+    width: 60px;
+    position: absolute;
+    top: 0;
+    z-index: 3;
+    min-height: 500px;
+
+    a {
+        &:hover{
+            img{
+                transition-duration: 1s;
+                filter: saturate(1.5)
+            }
+            p{
+                transition-duration: 500ms;
+                color: #ffd700;
+            }
+        }
+    }
+    a>p{
+        color: #fff;
+        font-size: x-small;
+        letter-spacing: 2px;
+        margin-top: 5px;
+        margin-left: 1.5rem;
+
+       
+    }
+    
+    .logo{
+        display: block;
+        width: 4rem;
+        margin-top: 1.5rem;
+        margin-left: .5rem;
+        
+    }
+    nav{
+        display: block;
+        position: absolute;
+        top: 50%;
+        height: 210px;
+        width: 100%;
+        margin-top: -120px;
+        text-align: center;
+        a{
+            display: block;
+            font-size: 22px;
+            color: $secondary-dark-color;
+            line-height: 51px;
+            height: 51px;
+            position: relative;
+            i{
+                transition: all .3s ease-out;
+            }
+            &:hover{
+                color: $light-color;
+        
+                svg{
+                    opacity: 0;
+                }
+                &::after{
+                    opacity: 1;
+                }
+            }
+            &::after{
+                content: "";
+                font-size: 9px;
+                letter-spacing: 2px;
+                position: absolute;
+                bottom: 0;
+                display: block;
+                width: 100%;
+                text-align: center;
+                opacity: 0;
+                transition: all 0.3s ease-out;
+            }
+            &.about-link{
+                &::after{
+                    content: "ABOUT";
+                }
+            }
+            &.skills-link{
+                &::after{
+                    content: "SKILLS";
+                }
+        
+            }
+            &.project-link{
+                &::after{
+                    content: "PROJECT";
+                }
+        
+            }
+            &.contact-link{
+                &::after{
+                    content: "CONTACT";
+                }
+        
+            }
+            &.active{
+                svg{
+                    color: $light-color;
+                }
+            }
+        }
+    }
+    ul{
+        position: absolute;
+        display: block;
+        list-style: none;
+        bottom: 20px;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+
+        li{
+            a{
+                color: $secondary-dark-color;
+                display: block;
+                padding: 7px 0;
+                line-height: 16px;
+                font-size: 17px;
+
+                &:hover > svg{
+                        color: $light-color;
+                }
+            }
+        }
+    }
+
+}
