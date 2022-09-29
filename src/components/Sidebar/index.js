@@ -8,21 +8,21 @@ import { faFacebook, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-i
 const Sidebar = () =>{
     return(
         <div className='nav-bar'>
-        <Link style={{ textDecoration: 'none' }} to="/">
+        <Link style={{ textDecoration: 'none' }} to="/my-portfolio">
             <img className='logo' src={LogoJ} alt='logo' />
             <p>Jim</p>
         </Link>
         <nav>
-            <NavLink exact="true" activeclassname="active" className="about-link" to="/about">
+            <NavLink exact="true" activeclassname="active" className="about-link" to="/my-portfolio/about">
                 <FontAwesomeIcon icon={faUser} color='#4d4d4d'/>
             </NavLink>
-            <NavLink exact="true" activeclassname="active" className="skills-link" to="/skills">
+            <NavLink exact="true" activeclassname="active" className="skills-link" to="/my-portfolio/skills">
                 <FontAwesomeIcon icon={faGear} color='#4d4d4d'/>
             </NavLink>
-            <NavLink exact="true" activeclassname="active" className="project-link" to="/projects">
+            <NavLink exact="true" activeclassname="active" className="project-link" to="/my-portfolio/projects">
                 <FontAwesomeIcon icon={faFolderOpen} color='#4d4d4d'/>
             </NavLink>
-            <NavLink exact="true" activeclassname="active" className="contact-link" to="/contact">
+            <NavLink exact="true" activeclassname="active" className="contact-link" to="/my-portfolio/contact">
                 <FontAwesomeIcon icon={faEnvelope} color='#4d4d4d'/>
             </NavLink>
         </nav>
