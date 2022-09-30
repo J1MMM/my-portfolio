@@ -1,4 +1,4 @@
-@import '~loaders.css/src/animations/square-spin.scss';
+@import '~loaders.css/src/animations/ball-pulse.scss';
 @import 'animate.css';
 
 @font-face {
@@ -31,6 +31,6 @@ textarea {
     margin: auto;
     width: 50px;
     height: 50px;
-    animation: fadeOut 500ms 1s;
+    animation: fadeOut 500ms 800ms;
     animation-fill-mode: forwards;
 }

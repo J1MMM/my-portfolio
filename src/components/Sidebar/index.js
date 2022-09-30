@@ -8,7 +8,7 @@ import { faFacebook, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-i
 const Sidebar = () =>{
     return(
         <div className='nav-bar'>
-        <Link style={{ textDecoration: 'none' }} to="/my-portfolio">
+        <Link style={{ textDecoration: 'none' }} to="/my-portfolio/">
             <img className='logo' src={LogoJ} alt='logo' />
             <p>Jim</p>
         </Link>

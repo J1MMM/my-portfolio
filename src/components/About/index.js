@@ -28,7 +28,7 @@ const About = () => {
                 <p>Ang sarili dinadaya, yeah Naglalasing-lasing hindi pala kaya, yeah Ayokong magising nang 'di ka kasama Kung nandito ka sa tabi mas masaya sana</p>
                 <p>Ngayon hinahanap ka Nasasaktan Buti na lang may alak pa Na nasasandalan Dinadaan ko lang sa amat Ang nararamdaman Para naman kahit papa'no gumaan</p>
             </div>
-            {/* <div className='cube-cont'>
+            <div className='cube-cont'>
                 <div className='cube-spinner'>
                     <div className='face1'>
                         <FontAwesomeIcon icon={faReact} color="#61DBFB" />
@@ -49,9 +49,9 @@ const About = () => {
                         <FontAwesomeIcon icon={faNodeJs} color="#539E43"/>
                     </div>
                 </div>
-            </div> */}
+            </div>
         </div>
-        <Loader type='square-spin' color="#ffd700"/>
+        <Loader type='ball-pulse' color="#ffd700"/>
         </>
     )
 }

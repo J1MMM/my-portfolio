@@ -93,13 +93,15 @@ $secondary-dark-color: #4d4d4e;
             }
             &.project-link{
                 &::after{
-                    content: "PROJECT";
+                    content: "PROJECTS";
+                    letter-spacing: .5px;
                 }
         
             }
             &.contact-link{
                 &::after{
                     content: "CONTACT";
+                    letter-spacing: 1px;
                 }
         
             }
