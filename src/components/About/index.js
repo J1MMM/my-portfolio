@@ -24,9 +24,9 @@ const About = () => {
                         idx={12} /* 1.5sec deley */
                         />
                 </h1>
-                <p>Eh paano kung hindi Hindi ka nakilala Siguro nakakulong pa din Sa nakaraan 'di makalaya</p>
-                <p>Ang sarili dinadaya, yeah Naglalasing-lasing hindi pala kaya, yeah Ayokong magising nang 'di ka kasama Kung nandito ka sa tabi mas masaya sana</p>
-                <p>Ngayon hinahanap ka Nasasaktan Buti na lang may alak pa Na nasasandalan Dinadaan ko lang sa amat Ang nararamdaman Para naman kahit papa'no gumaan</p>
+                <p>Ambitious web developer with over 7 months of experience in front-end specially for aesthetic and responsive website design.</p>
+                <p>I'm naturally curious, interested to learn and quietly confident to improve my skills by building real projects</p>
+                <p>I work on personal projects using advanced and updated technologies to enhance my skill set, also currently taking bachelor's degree major in web and game development </p>
             </div>
             <div className='cube-cont'>
                 <div className='cube-spinner'>
@@ -37,10 +37,10 @@ const About = () => {
                         <FontAwesomeIcon icon={faHtml5} color="#F06529"/>
                     </div>
                     <div className='face3'>
-                        <FontAwesomeIcon icon={faCss3} color="#28A4D9"/>
+                        <FontAwesomeIcon icon={faJsSquare} color="#EFD81D"/>
                     </div>
                     <div className='face4'>
-                        <FontAwesomeIcon icon={faJsSquare} color="#EFD81D"/>
+                        <FontAwesomeIcon icon={faCss3} color="#28A4D9"/>
                     </div>
                     <div className='face5'>
                         <FontAwesomeIcon icon={faPhp} color="#7377AD"/>

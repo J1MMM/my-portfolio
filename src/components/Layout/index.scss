@@ -7,6 +7,7 @@ $secondary-dark-color: #4d4d4e;
     width: 100%;
     height: 100%;
     user-select: none;
+    animation: fadeIn 1s 1s backwards;
 }
 .tags{
     position: absolute;
@@ -16,6 +17,7 @@ $secondary-dark-color: #4d4d4e;
     opacity: .6;
     font-size: 18px;
     font-family: 'La Belle Aurore';
+
 }
 .top-tags{
     bottom: auto;
@@ -41,7 +43,6 @@ $secondary-dark-color: #4d4d4e;
 
 .about-page{
     user-select: none;
-
 
     .text-zone {
         position: absolute;
@@ -84,7 +85,7 @@ $secondary-dark-color: #4d4d4e;
         }
     }
     p{
-        font-size: 15px;
+        font-size: 16px;
         color: #fff;
         font-family: sans-serif;
         font-weight: 300;
@@ -116,5 +117,76 @@ $secondary-dark-color: #4d4d4e;
     }
 }
 
+.contact-page{
+    user-select: none;
 
+    .text-zone {
+        position: absolute;
+        left: 10%;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 35%;
+        max-height: 90%;
+        cursor: context-menu;
+        
+        h1{
+            color: $primary-color;
+            font-size: 60px;
+            margin-bottom: 50px;
+            font-family: 'Coolvetica';
+            font-weight: 400;
+            line-height: 53px;
+    
+            &::before{
+                content: "<h1>";
+                font-family: 'La belle Aurore';
+                color: $primary-color;
+                font-size: 18px;
+                position: absolute;
+                left: -15px;
+                margin-top: -40px;
+                opacity: .6;
+            }
+            &::after{
+                content: "</h1>";
+                font-family: 'La belle Aurore';
+                color: $primary-color;
+                font-size: 18px;
+                position: absolute;
+                display: block;    
+                left: -15px;
+                opacity: .6;
+                animation: fadeIn 0s 0s backwards;
+            }
+            .text-animate-hover:hover{
+                color: #fff;
+            }
+        }
 
+    }
+    p{
+        font-size: 15px;
+        color: #fff;
+        font-family: sans-serif;
+        font-weight: 300;
+        min-width: fit-content;
+        animation: fadeInUp 1s 1s;
+        
+    }
+    .contact-info{
+        user-select: text;
+        z-index: 999;
+        background-color: black;
+        width: 19rem;
+        height: 14rem;
+        color: #fff;
+        position: absolute;
+        right: 3rem;
+        bottom: 10rem;
+        padding: 2rem;
+        font-size: 1.5rem;
+        span{
+            color: #ffd700;
+        }
+    }
+}

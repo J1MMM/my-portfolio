@@ -4,9 +4,10 @@
     right: 0;
     width: 50%;
     height: 100%;
-    padding-top: 18%;
+    padding-top: 15%;
     margin-left: 0;
     overflow: hidden;
+    animation: fadeIn 2s 1.5s backwards;
 
     .cube-spinner{
        animation-name: spincube;

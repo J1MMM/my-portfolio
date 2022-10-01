@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import AnimatedLetters from '../AnimatedLetters';
 import Loader from 'react-loaders';
-import { Helmet } from 'react-helmet';
 import TagCloud from 'TagCloud';
 
 const Home = () =>{
@@ -28,7 +27,8 @@ const Home = () =>{
         'npm', 'Bootstrap',
         'PHP', 'MongoDB', 'MySQL',
         'Mongoose', 'Express', 'Tailwind',
-        'Laravel' 
+        'Laravel', 'Redux', 'Material-UI',
+        'GitHub', 'TypeScript' 
     ];
     const options = {
         radius: 380,
@@ -69,7 +69,7 @@ const Home = () =>{
                         idx={19} 
                         />
                 </h1>
-                <h2>Front End / Back End Developer / Simpleng Pogi lang</h2>
+                <h2>Front End Developer / JavaScript / React js Developer</h2>
                 <Link to="/my-portfolio/contact" className='contact-button'>CONTACT ME</Link>
             </div>
             <div className='sphere-cont tagcloud'>
