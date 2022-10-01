@@ -27,7 +27,7 @@ const Contact = () => {
         ).then(
             () => {
                 alert('Message successfully sent!')
-                window.location.reload(false)
+                window.location.assign('/my-portfolio')
             },
             () => {
                 alert('Failed to send the message, please try agin')
