@@ -24,9 +24,9 @@ const About = () => {
                         idx={12} /* 1.5sec deley */
                         />
                 </h1>
-                <p>Ambitious web developer with over 7 months of experience in front-end specially for aesthetic and responsive website design.</p>
-                <p>I'm naturally curious, interested to learn and quietly confident to improve my skills by building real projects</p>
+                <p>Ambitious web developer with 7 months of experience in front-end specially for aesthetic and responsive website design.</p>
                 <p>I work on personal projects using advanced and updated technologies to enhance my skill set, also currently taking bachelor's degree major in web and game development </p>
+                <p>I'm quietly confident and open to learning how to improve my skills by collaborating with other developers.</p>
             </div>
             <div className='cube-cont'>
                 <div className='cube-spinner'>
