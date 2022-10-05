@@ -10,22 +10,98 @@ $primary-color: #ffd700;
     .card{
         // background-color: violet;
         height: 50vh;
-        
-        
+        margin-left: -2rem;
+        opacity: 0;
+        animation: bounceIn 1s;
+        animation-fill-mode: forwards;
+
+        &.card-1{
+            animation-delay: 1s;
+        }
+        &.card-2{
+            animation-delay: 1.5s;
+        }
+        &.card-3{
+            animation-delay: 2s;
+        }
+        &.card-4{
+            animation-delay: 2.5s;
+        }
         
         .card-control{
             margin-left: 4rem;
-            background-color: rgba(3, 49, 73, 0.438);
-            border: 1px solid $primary-color;
-            padding: 1rem 2rem;
+            // background-color: red;
             height: 37.5rem;
             border-radius: 10px;
             position: relative;
-            max-width: 75%;
+            max-width: 100%;
             overflow: hidden;
+            opacity: 0;
+            animation: bounceIn 1s 1s;
+            animation-fill-mode: forwards;
 
-            
+           
+        
+            .info-cont{
+                background: rgb(255,255,255);
+                background: linear-gradient(0deg, rgba(0,0,0, .9) 60%, rgba(0, 0, 0, 0) 100%);
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                left: 0;
+                bottom: -23rem;
+                z-index: 99;
+                transition-duration: 300ms;
+                padding: 1rem 2rem;
+                
+                &:hover{
+                bottom: 0;
+                background: linear-gradient(0deg, rgba(0,0,0, 1) 10%, rgba(0, 0, 0, 0) 100%);
+                    
+                h2{
+                    color: $primary-color;
+                    margin-top: 15rem;
+                }
+                p{
+                    opacity: 1;
+                }
+            }
 
+                h2{
+                    color: #fff;
+                    font-size: 3rem;
+                    margin-top: 10rem;
+                    margin-bottom: 1rem;
+                    transition-duration: 300ms;
+                }
+                p{
+                    color: #fff;
+                    font-size: 14px;
+                    margin-top: 0;
+                    opacity: 0;
+                    transition-duration: 1.5s;
+                    max-width: 90%;
+                }
+                a{
+                    transition-duration: 300ms;
+                    text-decoration: none;
+                    border: 1px solid $primary-color;
+                    color: $primary-color;
+                    padding: 8px;
+                    border-radius: 5px;
+                    position: absolute;
+                    bottom: 2rem;
+                    left: 2rem;
+                    letter-spacing: 2px;
+                    &:hover{
+                        background-color: #ffd700;
+                        color: #333;
+                    }
+                }
+                .source-btn{
+                    left: 14rem;
+                }
+            }
             &:hover{
                 .img-cont{
                     img{
@@ -34,24 +110,10 @@ $primary-color: #ffd700;
                 }
             }
 
-            h2{
-                color: $primary-color;
-                font-size: 3rem;
-                margin-top: 1rem;
-                margin-bottom: 1rem;
-            }
-            p{
-                color: #fff;
-
-                font-size: 14px;
-                margin-top: 0;
-            }
+            
             .img-cont{
-                background-color: black;
-                width: 112%;
-                height: 45%;
-                margin-top: -1rem;
-                margin-left: -2rem;
+                width: 100%;
+                height: 100%;
                 overflow: hidden;
                 display: flex;
                 justify-content: center;
@@ -62,24 +124,7 @@ $primary-color: #ffd700;
                     transition-duration: 1s;
                 }
             }
-            a{
-                text-decoration: none;
-                border: 1px solid $primary-color;
-                color: $primary-color;
-                padding: 8px;
-                border-radius: 5px;
-                position: absolute;
-                bottom: 2rem;
-                left: 2rem;
-                letter-spacing: 2px;
-                &:hover{
-                    background-color: #ffd700;
-                    color: #333;
-                }
-            }
-            .source-btn{
-                left: 14rem;
-            }
+            
 
 
         }

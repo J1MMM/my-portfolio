@@ -20,15 +20,17 @@ const Works = () => {
 
     const projectElements = projects.map(item => {
         return(
-                <div key={item.id} className='card'>
+                <div key={item.id} className={`card card-${item.id}`}>
                     <div className='card-control'>
                         <div className='img-cont'>
                             <img src={require('../../assets/images/'+item.image+'.png')} />
                         </div>
-                        <h2>{item.title}</h2>
-                        <p>{item.description}</p>
-                        <a href={item.URL} target="_blank">Visit Project</a>
-                        <a className='source-btn' href={item.sourceUrl} target="_blank">Source Code</a>
+                        <div className='info-cont'>
+                          <h2>{item.title}</h2>
+                          <p>{item.description}</p>
+                          <a href={item.URL} target="_blank">Visit Project</a>
+                          <a className='source-btn' href={item.sourceUrl} target="_blank">Source Code</a>
+                        </div>
                     </div>
                 </div>
         )
@@ -36,31 +38,37 @@ const Works = () => {
     const settings = {
         dots: true,
         infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToShow: 4,
+        slidesToScroll: 4,
         initialSlide: 0,
         arrows: true,
         autoplay: true,
-        speed: 1000,
-        autoplaySpeed: 2000,
+        speed: 500,
+        autoplaySpeed: 3000,
         cssEase: "linear",
         pauseOnHover: true,
         responsive: [
           {
-            breakpoint: 1024,
+            breakpoint: 1201,
             settings: {
-              slidesToShow: 2,
-              slidesToScroll: 2,
-              infinite: true,
-              dots: true
+              slidesToShow: 4,
+              slidesToScroll: 4,
+              
             }
           },
           {
-            breakpoint: 600,
+            breakpoint: 1025,
             settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
-              initialSlide: 1
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              
+            }
+          },
+          {
+            breakpoint: 769,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
             }
           },
           {

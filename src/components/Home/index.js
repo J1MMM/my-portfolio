@@ -30,14 +30,22 @@ const Home = () =>{
         'Laravel', 'Redux', 'Material-UI',
         'GitHub', 'TypeScript' 
     ];
-    const options = {
+    const options1 = {
         radius: 380,
         maxSpeed: 'fast',
         initSpeed: 'fast',
         direction: 135,
         keep: false
     };
+    const options3 = {
+        radius: 180,
+        maxSpeed: 'fast',
+        initSpeed: 'fast',
+        direction: 135,
+        keep: false
+    };
 
+    let options = window.innerWidth < 480 ? options3 : options1
     TagCloud(container, texts, options);
 
 }, [])
@@ -72,9 +80,9 @@ const Home = () =>{
                 <h2>Front End Developer / JavaScript / React js Developer</h2>
                 <Link to="/my-portfolio/contact" className='contact-button'>CONTACT ME</Link>
             </div>
-            <div className='sphere-cont tagcloud'>
+            {/* <div className='sphere-cont tagcloud'>
                 <span class='Sphere'></span>
-            </div>
+            </div> */}
         </div>
         <Loader type='ball-pulse' color="#ffd700"/>
         </>
