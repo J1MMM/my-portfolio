@@ -80,9 +80,9 @@ const Home = () =>{
                 <h2>Front End Developer / JavaScript / React js Developer</h2>
                 <Link to="/my-portfolio/contact" className='contact-button'>CONTACT ME</Link>
             </div>
-            {/* <div className='sphere-cont tagcloud'>
+            <div className='sphere-cont tagcloud'>
                 <span class='Sphere'></span>
-            </div> */}
+            </div>
         </div>
         <Loader type='ball-pulse' color="#ffd700"/>
         </>
