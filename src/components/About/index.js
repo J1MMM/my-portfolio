@@ -27,7 +27,9 @@ const About = () => {
                 {/* <p>Ambitious web developer with 7 months of experience in front-end specially for aesthetic and responsive website design.</p> */}
                 <p>I work on personal projects using advanced and updated technologies to enhance my skill set</p>
                 <p>I currently taking bachelor's degree major in web and game development </p>
-                <p>I'm quietly confident and willing to learning on how to improve my skills by the help of other developers.</p>
+                <p>I'm willing to learn on how to improve my skills by the help of other developers.</p>
+                <p>testing</p>
+                <p>mic test</p>
             </div>
             <div className='cube-cont'>
                 <div className='cube-spinner'>
